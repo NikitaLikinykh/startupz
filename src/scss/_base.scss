@@ -1,0 +1,31 @@
+* {
+    font-family: "CircularStd";
+}
+
+*::after,
+::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: $maxWidthContainer;
+    min-width: $minContainer;
+    margin: 0 auto;
+    padding: 0px 5px;
+
+}
+
+@include breakpoint('lgx') {
+    .container {
+        padding: 0px 20px;
+    }
+}

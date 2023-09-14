@@ -1,0 +1,14 @@
+@import "./settings";
+@import "./base";
+
+
+@import "./atoms/buttons";
+@import "./atoms/inputs";
+@import "./atoms/text-blocks";
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/cards";
+@import "./components/forms";
+
+@import "./pages/home"

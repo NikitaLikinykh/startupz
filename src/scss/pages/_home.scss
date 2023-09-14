@@ -1,0 +1,519 @@
+.top {
+    margin-top: 145px;
+    padding-bottom: 230px;
+    position: relative;
+
+    &__content {
+        max-width: 758px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__vector {
+        position: absolute;
+        top: 17px;
+        right: 0px;
+    }
+
+    @include breakpoint('lgx') {
+        padding-bottom: 50px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__content {
+            max-width: none;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__vector {
+            position: static;
+            max-width: 500px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.about-us {
+    background: $gray-100;
+
+    &__inner {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    &__core-inner {
+        padding-top: 150px;
+        padding-bottom: 195px;
+    }
+
+    &__top {
+        position: relative;
+
+        &_core {
+            height: 108px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__top-wrapper {
+        max-width: 875px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__vector {
+        position: absolute;
+        top: -5px;
+        right: 50px;
+    }
+
+    &__description {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 95px;
+
+        &_core {
+            gap: 75px;
+        }
+    }
+
+    @include breakpoint('lg') {
+        &__inner {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        &__core-inner {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        &__top_core {
+            justify-content: center;
+            gap: 20px;
+        }
+
+        &__top-wrapper {
+            text-align: center;
+        }
+
+
+        &__vector {
+            width: 50px;
+
+            img {
+                width: 100%;
+            }
+
+            &_core {
+                position: static;
+            }
+        }
+
+        &__description {
+            gap: 50px;
+        }
+    }
+
+    @include breakpoint('sm') {
+        &__vector {
+            display: none;
+        }
+
+        &__vector_core {
+            display: block;
+        }
+
+        &__top-wrapper_core {
+            h3 {
+                font-size: 40px;
+            }
+
+        }
+
+        &__top_core {
+            gap: 10px;
+        }
+    }
+}
+
+.solving-problems {
+    padding-top: 156px;
+    padding-bottom: 140px;
+    position: relative;
+
+    &__text {
+        position: relative;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: -0.4px;
+        color: $primaryOrange;
+        margin: 0 auto;
+        padding-left: 93px;
+        padding-right: 93px;
+        width: fit-content;
+    }
+
+    &__text::before {
+        content: "";
+        width: 59px;
+        height: 66px;
+        background: url('../images/like-right.svg');
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    &__text::after {
+        content: "";
+        width: 59px;
+        height: 66px;
+        background: url('../images/like-left.svg');
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    &__inner {
+        position: relative;
+    }
+
+    &__vector {
+        position: absolute;
+        top: -40px;
+        right: 0px;
+    }
+
+    @include breakpoint('lg') {
+        padding-top: 150px;
+        padding-bottom: 100px;
+
+        &__inner {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+
+        &__vector {
+            position: relative;
+            top: 0;
+            right: 0;
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+
+    @include breakpoint('md') {
+        padding-top: 80px;
+        padding-bottom: 40px;
+
+        &__vector {
+            margin: 0px;
+            margin-left: auto;
+
+            &-head {
+                img {
+                    width: 90px;
+                }
+            }
+        }
+
+        &__text {
+            text-align: center;
+            font-size: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            &::before {
+                width: 40px;
+                height: 40px;
+                background-size: contain;
+                top: 0px;
+                background-repeat: no-repeat;
+            }
+
+            &::after {
+                width: 40px;
+                height: 40px;
+                background-size: contain;
+                top: 0px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.vector-message {
+    position: absolute;
+    right: 80%;
+    top: -66px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+
+    @include breakpoint('md') {
+        width: 180px;
+        top: -40px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.vector-close {
+    position: absolute;
+    right: 20px;
+    top: -60px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $gray;
+
+    @include breakpoint('md') {
+        top: -40px;
+        font-size: 15px;
+    }
+}
+
+.our-works {
+    padding-top: 140px;
+    padding-bottom: 180px;
+
+    &__wrapper {
+        margin-top: 55px;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        position: relative;
+        max-width: 882px;
+        color: $primaryOrange;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: -0.4px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 180px;
+        padding-left: 92px;
+        padding-right: 92px;
+    }
+
+    &__text::before {
+        content: "";
+        width: 59px;
+        height: 66px;
+        background: url('../images/like-right.svg');
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__text::after {
+        content: "";
+        width: 59px;
+        height: 66px;
+        background: url('../images/like-left.svg');
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @include breakpoint('xl') {
+        padding: 80px 0px;
+
+        &__text {
+            margin-top: 70px;
+            font-size: 25px;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+    }
+
+    @include breakpoint('sm') {
+        &__text {
+            font-size: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+
+            &::before {
+                width: 40px;
+                height: 40px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            &::after {
+                width: 40px;
+                height: 40px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.hiring {
+    position: relative;
+    padding: 140px 0px 165px;
+    background: $gray-100;
+
+    &::before {
+        content: "";
+        width: 318px;
+        height: 319px;
+        background: url('../images/hiring1.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        content: "";
+        width: 318px;
+        height: 319px;
+        background: url('../images/hiring2.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__wrapper {
+        max-width: 440px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    @include breakpoint('lgx') {
+        padding-bottom: 100px;
+
+        &::before {
+            width: 180px;
+            height: 180px;
+            background-size: contain;
+            top: 100px;
+        }
+
+        &::after {
+            width: 180px;
+            height: 180px;
+            background-size: contain;
+            top: 100px;
+        }
+    }
+
+    @include breakpoint('md') {
+
+
+        &::before {
+            width: 120px;
+            height: 120px;
+
+        }
+
+        &::after {
+            width: 120px;
+            height: 120px;
+
+        }
+    }
+}
+
+.callback {
+    position: relative;
+    padding: 60px 120px;
+    background: $secondaryYellow;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+    }
+
+    &__title {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 55px;
+        letter-spacing: -1.2px;
+        color: white;
+        max-width: 677px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.24px;
+        color: white;
+    }
+
+    @include breakpoint('lg') {
+        padding: 60px 0px;
+
+        &__title {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        &__wrapper {
+            align-items: center;
+        }
+
+        &__form {
+            width: 100%;
+        }
+    }
+}
+
+.rocket {
+    position: absolute;
+    left: 530px;
+    bottom: -60px;
+
+    img {
+        width: 100%;
+    }
+
+    @include breakpoint('lg') {
+        display: none;
+    }
+}

@@ -1,0 +1,11 @@
+.callback__form {
+    max-width: 512px;
+    display: flex;
+    padding: 70px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+    flex-direction: column;
+    gap: 16px;
+    background: $gray-100;
+    box-sizing: border-box;
+}

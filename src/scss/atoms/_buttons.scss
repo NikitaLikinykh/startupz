@@ -1,0 +1,57 @@
+.logo {
+    max-width: 200px;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.button {
+    max-width: fit-content;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    color: $ComplementaryGreen;
+    border: 1px solid $ComplementaryGreen;
+    border-radius: 32.5px;
+
+    &:hover {
+        background: $ComplementaryGreen;
+        color: white;
+        transition-duration: 0.3s;
+        transition-property: background;
+    }
+
+    &_sm {
+        padding: 13px 20px;
+        letter-spacing: -0.18px;
+    }
+
+    &_fill {
+        background: $ComplementaryGreen;
+        color: white;
+    }
+
+    &_card {
+        padding: 14px 30px;
+        margin: 0 auto;
+    }
+
+    &_callback {
+        padding: 13px 40px;
+        background: #3D4F5C;
+        color: white;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+            background: #3D4F5C;
+        }
+    }
+
+    &_center {
+        margin: 0 auto;
+    }
+}

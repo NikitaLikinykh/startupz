@@ -1,0 +1,16 @@
+$maxWidth: 1440px;
+$maxWidthContainer: 1201px;
+$minContainer: 310px;
+
+$breakpoints: (
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'lgx': 1140px,
+    'xl': 1440px,
+    ) !default;
+
+@import "./helpers/reset";
+@import "./helpers/fonts";
+@import "./helpers/mixins";
+@import "./helpers/colors";

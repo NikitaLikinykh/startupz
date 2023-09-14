@@ -1,0 +1,63 @@
+.work-card {
+    max-width: 588px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    text-align: center;
+    padding: 45px 100px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+    box-sizing: border-box;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__title {
+        color: #A9BC87;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: -0.32px;
+
+        &_aqua {
+            color: #8BB5C9;
+        }
+
+        &_green {
+            color: #00A0B6;
+        }
+
+        &_purple {
+            color: #8B60D3;
+        }
+
+    }
+
+    &__descriptions {
+        color: $gray;
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: -0.16px;
+    }
+
+    @include breakpoint('md') {
+        padding: 45px;
+
+        &__img {
+            img {
+                margin: 0 auto;
+            }
+
+            text-align: center;
+        }
+    }
+}

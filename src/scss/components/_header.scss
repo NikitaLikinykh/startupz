@@ -1,0 +1,50 @@
+.header {
+    margin-top: 36px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.nav {
+    width: fit-content;
+
+    &__wrapper {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 18px;
+        /* 100% */
+        letter-spacing: -0.18px;
+        display: flex;
+        align-items: center;
+        color: $black;
+        height: auto;
+    }
+}
+
+.burger {
+    display: none;
+}
+
+@include breakpoint('md') {
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        background: none;
+        border: none;
+        width: 50px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
